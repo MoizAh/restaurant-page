@@ -1,15 +1,14 @@
+import headerImg from './header-image.jpeg';
+
 const homepage = () => {
     const homeContent = document.querySelector(".content");
   
     const homepageIntro = document.createElement("div");
     homepageIntro.classList.add("introduction");
-  
-    const headerImage = document.createElement("img");
-    headerImage.src = "header-image.jpeg";
-    headerImage.alt = "man-eating-cheesecake";
-    homeContent.appendChild(headerImage);
-  
-    homepageIntro.appendChild(headerImage);
+
+    const headerImage = new Image();
+    headerImage.src = headerImg;
+    homepageIntro.appendChild(headerImage)
   
     const headerText = document.createElement("div");
     headerText.classList.add("header-text");
