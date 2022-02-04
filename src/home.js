@@ -5,7 +5,7 @@ const homepage = () => {
     homepageIntro.classList.add("introduction");
   
     const headerImage = document.createElement("img");
-    headerImage.src = "/src/header-image.jpeg";
+    headerImage.src = "header-image.jpeg";
     headerImage.alt = "man-eating-cheesecake";
     homeContent.appendChild(headerImage);
   
